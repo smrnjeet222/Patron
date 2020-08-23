@@ -1,0 +1,15 @@
+:root {
+  --mainColor: #606b56;
+  --secColor: #515a48;
+
+  --borderColor: #161914;
+  --themeBorder: #fff;
+
+  --previewBg: rgb(81, 90, 72, 0.8);
+  --previewSh: #2a2f25;
+
+  --mainText: #fff;
+  --secText: #eeeeee;
+
+  --btnColor: #669966;
+}
