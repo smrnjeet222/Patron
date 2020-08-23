@@ -303,7 +303,6 @@ h6 {
 
 #social-img {
   width: 80%;
-  height: 60%;
   margin: 0 auto;
 }
 
@@ -406,5 +405,25 @@ h6 {
   }
   .right-col {
     justify-content: center;
+  }
+  #preview {
+    width: 65%;
+    margin: auto;
+    -webkit-box-shadow: -15px -15px 0px 0px var(--previewSh);
+    -moz-box-shadow: -15px -15px 0px 0px var(--previewSh);
+    box-shadow: -15px -15px 0px 0px var(--previewSh);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #preview-shadow {
+    max-width: 280px;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  #preview {
+    width: 280px;
   }
 }
