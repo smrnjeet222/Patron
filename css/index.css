@@ -80,6 +80,18 @@ h6 {
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
+.bg {
+  background-image: url("https://source.unsplash.com/2zJhA9RSkys");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .s1 {
   background-color: var(--mainColor);
@@ -176,9 +188,20 @@ h6 {
   padding-bottom: 50px;
 }
 
-#profile-pic {
+.profile-pics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pic-wrapper {
+  text-align: center;
+}
+
+#profile-pic-1,
+#profile-pic-2 {
   display: block;
-  margin: 0 auto;
+  margin: 0 1rem;
   height: 200px;
   width: 200px;
   object-fit: cover;
@@ -239,15 +262,16 @@ h6 {
   grid-area: right-col;
   display: grid;
   align-content: center;
-
+  justify-content: center;
   padding-bottom: 50px;
 }
 
 #preview {
-  width: 300px;
+  /* min-width: 300px; */
   border: 1.5px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
+  margin: 2rem;
   position: relative;
 
   -webkit-box-shadow: -30px -30px 0px 0px var(--previewSh);
